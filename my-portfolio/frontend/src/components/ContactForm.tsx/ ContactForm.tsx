@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div className="px-50 py-50 border-4  rounded-2xl">
+    <div className="px-40 py-15 border-4  rounded-2xl">
       <h3 className="text-xl lg:text-4xl font-bold mb-10 text-center">
         Send a message!
       </h3>
