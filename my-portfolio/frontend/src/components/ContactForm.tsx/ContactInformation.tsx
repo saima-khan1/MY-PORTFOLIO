@@ -19,7 +19,7 @@ const ContactInformation = () => {
 
       <div className="space-y-6">
         <div className="flex items-center space-x-4 text-gray-700">
-          <FaEnvelope className="text-blue-500 text-2xl" />
+          <FaEnvelope className="text-blue-500 text-4xl" />
           <p className="text-lg">
             <span className="font-semibold">Email:</span> <br />
             <a
@@ -32,7 +32,7 @@ const ContactInformation = () => {
         </div>
 
         <div className="flex items-center space-x-4 text-gray-700">
-          <FaPhoneAlt className="text-blue-500 text-2xl" />
+          <FaPhoneAlt className="text-amber-500 text-4xl" />
           <p className="text-lg">
             <span className="font-semibold">Phone:</span> <br />
             <a href="tel:+123456" className="hover:text-blue-600">
@@ -42,7 +42,7 @@ const ContactInformation = () => {
         </div>
 
         <div className="flex items-center space-x-4 text-gray-700">
-          <FaLocationDot className="text-blue-500 text-2xl" />
+          <FaLocationDot className="text-blue-500 text-4xl" />
           <p className="text-lg">
             <span className="font-semibold">Location:</span> <br />
             Helsingborg, Sweden
@@ -51,15 +51,15 @@ const ContactInformation = () => {
       </div>
 
       <div className="mt-12 ">
-        <h3 className="font-bold text-2xl text-gray-800 mb-6">
+        <h3 className="font-bold text-3xl text-gray-800 mb-6">
           Connect with me
         </h3>
-        <div className="flex  space-x-6 text-3xl">
+        <div className="flex  space-x-6 text-4xl">
           <a
             href="https://github.com/yourgithub"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-500 transition"
+            className="hover:text-gray-500 transition text-4xl"
           >
             <FaGithub />
           </a>
@@ -68,7 +68,7 @@ const ContactInformation = () => {
             href="https://linkedin.com/in/yourlinkedin"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 transition"
+            className="text-blue-600 hover:text-blue-800 transition text-4xl"
           >
             <FaLinkedin />
           </a>
@@ -77,7 +77,7 @@ const ContactInformation = () => {
             href="https://instagram.com/yourinstagram"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-pink-500 hover:text-pink-700 transition"
+            className="text-pink-500 hover:text-pink-700 transition text-4xl"
           >
             <FaInstagram />
           </a>
@@ -86,7 +86,7 @@ const ContactInformation = () => {
             href="https://facebook.com/yourfacebook"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-700 transition"
+            className="text-blue-500 hover:text-blue-700 transition text-4xl"
           >
             <FaFacebook />
           </a>
