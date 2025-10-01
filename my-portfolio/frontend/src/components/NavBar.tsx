@@ -16,7 +16,7 @@ const NavBar = () => {
     <nav className="bg-amber-500 p-6 sticky top-0 z-50">
       <div className="flex justify-between items-center">
         <p className="text-3xl font-semibold ">
-          <span className="text-white">Saima</span>
+          <span className="text-white text-glow text-foreground">Saima</span>
           <span className="text-blue-500 ml-2">Portfolio</span>
         </p>
 

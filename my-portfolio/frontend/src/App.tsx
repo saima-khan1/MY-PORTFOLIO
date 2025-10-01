@@ -11,10 +11,7 @@ const App = () => {
     <div className="bg-amber-200 min-h-screen w-full ">
       <NavBar />
       <main>
-        <section
-          id="home"
-          className="min-h-screen flex items-center justify-center"
-        >
+        <section id="home" className="min-h-screen ">
           <Home />
         </section>
         <section
