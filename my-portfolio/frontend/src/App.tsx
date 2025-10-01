@@ -22,10 +22,7 @@ const App = () => {
         >
           <Skills />
         </section>
-        <section
-          id="projects"
-          className="min-h-screen flex items-center justify-center"
-        >
+        <section id="projects" className="min-h-screen flex  justify-center">
           <Projects />
         </section>
         <section id="contact" className="min-h-screen flex  justify-center">
