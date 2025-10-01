@@ -2,11 +2,11 @@ import { useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 
 const links = [
-  { name: "home", href: "#home" },
-  { name: "about", href: "#about" },
-  { name: "skills", href: "#skills" },
-  { name: "projects", href: "#projects" },
-  { name: "contact", href: "#contact" },
+  { name: "About", href: "#home" },
+
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const NavBar = () => {

@@ -1,10 +1,11 @@
 import "tailwindcss";
-import Home from "./components/Home";
-import About from "./components/About";
+
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+
 import NavBar from "./components/NavBar";
+import About from "./components/About";
+import Contact from "./components/ContactForm.tsx/Contact";
 
 const App = () => {
   return (
@@ -12,14 +13,9 @@ const App = () => {
       <NavBar />
       <main>
         <section id="home" className="min-h-screen ">
-          <Home />
-        </section>
-        <section
-          id="about"
-          className="min-h-screen flex items-center justify-center"
-        >
           <About />
         </section>
+
         <section
           id="skills"
           className="min-h-screen flex items-center justify-center"
@@ -32,10 +28,7 @@ const App = () => {
         >
           <Projects />
         </section>
-        <section
-          id="contact"
-          className="min-h-screen flex items-center justify-center"
-        >
+        <section id="contact" className="min-h-screen flex  justify-center">
           <Contact />
         </section>
       </main>
