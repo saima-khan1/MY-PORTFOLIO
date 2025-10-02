@@ -16,10 +16,7 @@ const App = () => {
           <About />
         </section>
 
-        <section
-          id="skills"
-          className="min-h-screen flex items-center justify-center"
-        >
+        <section id="skills" className="min-h-screen flex  justify-center">
           <Skills />
         </section>
         <section id="projects" className="min-h-screen flex  justify-center">
