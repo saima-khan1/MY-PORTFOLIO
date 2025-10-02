@@ -33,7 +33,7 @@ const Projects = () => {
     <div className=" md:px-20 py-30">
       <div className="text-center  lg:mb-12">
         <h1 className="text-5xl font-bold">
-          My <span className="text-blue-600">Projects</span>
+          <span className="text-blue-600">Projects</span>
         </h1>
       </div>
 

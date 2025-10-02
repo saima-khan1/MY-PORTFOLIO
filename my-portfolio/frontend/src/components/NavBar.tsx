@@ -15,15 +15,15 @@ const NavBar = () => {
   return (
     <nav className="bg-amber-500 p-6 sticky top-0 z-50">
       <div className="flex justify-between items-center">
-        <p className="text-3xl font-semibold ">
+        <p className="text-4xl font-semibold ">
           <span className="text-white text-glow text-foreground">Saima</span>
           <span className="text-blue-500 ml-2">Portfolio</span>
         </p>
 
-        <ul className="hidden md:flex flex-row space-x-6 text-xl font-normal text-amber-50">
+        <ul className="hidden md:flex flex-row space-x-6 text-2xl font-medium text-amber-50">
           {links.map((link) => (
             <li key={link.name}>
-              <a href={link.href} className="hover:text-blue-200">
+              <a href={link.href} className="hover:text-blue-700">
                 {link.name}
               </a>
             </li>

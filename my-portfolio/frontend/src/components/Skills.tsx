@@ -2,7 +2,7 @@ import {
   FaReact,
   FaNodeJs,
   FaDatabase,
-  FaAws,
+  //   FaAws,
   FaGitAlt,
   FaDocker,
 } from "react-icons/fa";
@@ -38,7 +38,7 @@ const skills = [
   },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-sky-400" /> },
   // { name: "Material UI", icon: <SiMaterialui className="text-indigo-500" /> },
-  { name: "AWS", icon: <FaAws className="text-orange-500" /> },
+
   { name: "GCP", icon: <SiGooglecloud className="text-blue-500" /> },
   { name: "Docker", icon: <FaDocker className="text-blue-400" /> },
   { name: "Git/GitHub", icon: <FaGitAlt className="text-red-500" /> },
@@ -53,7 +53,7 @@ const Skills = () => {
     <div className=" md:px-20 py-30">
       <div className="text-center  lg:mb-12">
         <h1 className="text-5xl font-bold">
-          My <span className="text-blue-600">Skills</span>
+          <span className="text-blue-600">Skills</span>
         </h1>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 py-20">
