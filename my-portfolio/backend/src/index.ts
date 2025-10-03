@@ -2,13 +2,16 @@ import express from "express";
 import cors from "cors";
 import mongoose, { Mongoose } from "mongoose";
 import * as dotenv from "dotenv";
+import projectRoutes from "./routes/Projects";
 
-const app = express();
 dotenv.config();
+const app = express();
 const Port = 5005;
 
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use("/api/projects", projectRoutes);
 
 app.get("/", (req, res) => {
   res.send("hello world");
