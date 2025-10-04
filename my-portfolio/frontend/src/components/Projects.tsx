@@ -2,45 +2,45 @@ import { useEffect, useState } from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import type { Project } from "../types/project";
 import { getProjectData } from "../services/FetchProjects";
-const projects = [
-  {
-    id: 1,
-    title: "Large JSON Handler",
-    description: "Efficiently handles and searches large JSON data.",
-    tech: ["React", "Node.js", "TypeScript"],
-    image: "https://picsum.photos/400/250",
-    demo: "#",
-    github: "#",
-  },
-  {
-    id: 2,
-    title: "Flight Ticket Itinerary",
-    description: "Modern UI for flight bookings and itineraries.",
-    tech: ["React", "Tailwind", "TypeScript"],
-    image: "https://picsum.photos/400/250",
-    demo: "#",
-    github: "#",
-  },
-  {
-    id: 3,
-    title: "E-commerce Website",
-    description: "Full-stack store with product search and cart.",
-    tech: ["Next.js", "MongoDB", "Node.js"],
-    image: "https://picsum.photos/400/250",
-    demo: "#",
-    github: "#",
-  },
-];
+// const projects = [
+//   {
+//     id: 1,
+//     title: "Large JSON Handler",
+//     description: "Efficiently handles and searches large JSON data.",
+//     tech: ["React", "Node.js", "TypeScript"],
+//     image: "https://picsum.photos/400/250",
+//     demo: "#",
+//     github: "#",
+//   },
+//   {
+//     id: 2,
+//     title: "Flight Ticket Itinerary",
+//     description: "Modern UI for flight bookings and itineraries.",
+//     tech: ["React", "Tailwind", "TypeScript"],
+//     image: "https://picsum.photos/400/250",
+//     demo: "#",
+//     github: "#",
+//   },
+//   {
+//     id: 3,
+//     title: "E-commerce Website",
+//     description: "Full-stack store with product search and cart.",
+//     tech: ["Next.js", "MongoDB", "Node.js"],
+//     image: "https://picsum.photos/400/250",
+//     demo: "#",
+//     github: "#",
+//   },
+// ];
 
 const Projects = () => {
-  const [data, setData] = useState<Project[]>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
     try {
       const projectData = await getProjectData();
       console.log(projectData, "data");
-      setData(projectData);
+      setProjects(projectData);
     } catch (err) {
       console.error("failed to fetch", err);
     } finally {
@@ -52,7 +52,7 @@ const Projects = () => {
   }, []);
 
   if (loading) return <p>Loading projects...</p>;
-  if (data.length === 0) return <p>No projects Found</p>;
+  if (projects.length === 0) return <p>No projects Found</p>;
   return (
     <div className=" md:px-20 py-30">
       <div className="text-center  lg:mb-12">
@@ -65,8 +65,8 @@ const Projects = () => {
         {" "}
         {projects.map((project) => (
           <div
-            key={project.id}
-            className="bg-white dark:bg-gray-900 rounded-2xl border-4 border-amber-500 shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200  dark:border-gray-700 lg:p-10   "
+            key={project._id}
+            className="bg-white dark:bg-gray-900 rounded-2xl border-4 border-amber-500 shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200  dark:border-gray-700 lg:p-0   "
           >
             {" "}
             <img src={project.image} className="w-full h-48 object-cover" />
@@ -77,7 +77,7 @@ const Projects = () => {
               <p className="text-gray-600 dark:text-gray-300 mb-3">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2 mb-3 ">
+              {/* <div className="flex flex-wrap gap-2 mb-3 ">
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
@@ -86,17 +86,20 @@ const Projects = () => {
                     {tech}
                   </span>
                 ))}
-              </div>
+              </div> */}
 
               <div className="flex gap-3">
+                {project.demoLink && (
+                  <a
+                    href={project.demoLink}
+                    className="flex items-center gap-2 bg-blue-600 text-white px-3 py-1.5 rounded-lg hover:bg-blue-700 text-sm"
+                  >
+                    <FiExternalLink /> Demo
+                  </a>
+                )}
+
                 <a
-                  href={project.demo}
-                  className="flex items-center gap-2 bg-blue-600 text-white px-3 py-1.5 rounded-lg hover:bg-blue-700 text-sm"
-                >
-                  <FiExternalLink /> Demo
-                </a>
-                <a
-                  href={project.github}
+                  href={project.gitHubLink}
                   className="flex items-center gap-2 bg-amber-600 text-white px-3 py-1.5 rounded-lg hover:bg-gray-700 text-sm"
                 >
                   <FiGithub /> GitHub
