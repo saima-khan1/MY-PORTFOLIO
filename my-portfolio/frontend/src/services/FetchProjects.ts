@@ -1,10 +1,10 @@
-// const api=process.env.API_KEY
-
 import type { Project } from "../types/project";
+
+const url = import.meta.env.VITE_BASE_URL;
 
 export const getProjectData = async (): Promise<Project[]> => {
   try {
-    const response = await fetch("http://localhost:5005/api/projects");
+    const response = await fetch(`${url}`);
     if (!response.ok) {
       throw new Error("not found");
     }
