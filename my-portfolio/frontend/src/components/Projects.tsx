@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import type { Project } from "../types/project";
+import { getProjectData } from "../services/FetchProjects";
 const projects = [
   {
     id: 1,
@@ -28,7 +31,28 @@ const projects = [
     github: "#",
   },
 ];
+
 const Projects = () => {
+  const [data, setData] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchData = async () => {
+    try {
+      const projectData = await getProjectData();
+      console.log(projectData, "data");
+      setData(projectData);
+    } catch (err) {
+      console.error("failed to fetch", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  if (loading) return <p>Loading projects...</p>;
+  if (data.length === 0) return <p>No projects Found</p>;
   return (
     <div className=" md:px-20 py-30">
       <div className="text-center  lg:mb-12">
