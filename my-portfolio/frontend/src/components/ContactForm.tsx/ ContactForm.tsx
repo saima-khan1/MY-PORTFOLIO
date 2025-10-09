@@ -26,8 +26,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="px-30 py-15 border-4 border-amber-500 rounded-2xl">
-      <h3 className="font-bold text-3xl text-gray-800 lg:text-4xl  mb-10 text-center">
+    <div className="px-4 py-4 lg:px-15 lg:py-12 border-4 border-amber-500 rounded-2xl">
+      <h3 className="font-bold px-10 py-0 text-3xl text-gray-800 lg:text-4xl  mb-10 text-center">
         Send a message!
       </h3>
       <form ref={form} onSubmit={handleSubmit}>
@@ -84,7 +84,7 @@ const ContactForm = () => {
         <div className="flex justify-center">
           <button
             type="submit"
-            className=" bg-amber-500 text-white border-4 rounded-full  px-20 py-4 shadow-lg hover:bg-amber-600  transition duration-300 ease-in-out mt-10 "
+            className=" bg-amber-500 text-white border-2 rounded lg:border-4 lg:rounded-full px-5 py-2 lg:px-20 lg:py-4 shadow-lg hover:bg-amber-600  transition duration-300 ease-in-out mt-10 "
           >
             Send Message
           </button>

@@ -3,7 +3,7 @@ import ContactInformation from "./ContactInformation";
 
 const ContactLabel = () => {
   return (
-    <div className="px-6 md:px-20 py-30">
+    <div className="px-6 sm:px-0 md:px-20 py-30">
       <div className="text-center  lg:mb-12">
         <h1 className="text-3xl  lg:text-5xl font-bold">
           Get In <span className="text-blue-500">Touch</span>
