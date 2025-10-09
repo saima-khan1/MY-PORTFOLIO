@@ -66,10 +66,10 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project._id}
-            className="bg-white dark:bg-gray-900 rounded-2xl border-4 border-amber-500 shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200  dark:border-gray-700 lg:p-0   "
+            className="bg-white dark:bg-gray-900 rounded-2xl border-4 border-amber-500 hover:shadow-blue-900 sm:hover:shadow-amber-900 shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 dark:border-gray-700 lg:p-2"
           >
             {" "}
-            <img src={project.image} className="w-full h-48 object-cover" />
+            <img src={project.image} className="w-full h-48 " />
             <div className="p-4">
               <h3 className="text-xl font-bold text-gray-600 dark:text-gray-100 mb-2">
                 {project.title}
