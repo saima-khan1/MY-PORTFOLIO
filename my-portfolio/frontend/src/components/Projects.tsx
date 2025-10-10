@@ -54,14 +54,14 @@ const Projects = () => {
   if (loading) return <p>Loading projects...</p>;
   if (projects.length === 0) return <p>No projects Found</p>;
   return (
-    <div className=" md:px-20 py-30">
-      <div className="text-center  lg:mb-12">
+    <div className=" px-6  lg:px-100 md:px-20 lg:py-30">
+      <div className="text-center mt-30  lg:mb-12">
         <h1 className="text-5xl font-bold">
           <span className="text-blue-600">Projects</span>
         </h1>
       </div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-30 mt-30">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-30 mt-10 lg:mt-30">
         {" "}
         {projects.map((project) => (
           <div

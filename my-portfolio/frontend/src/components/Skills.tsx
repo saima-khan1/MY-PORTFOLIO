@@ -56,14 +56,14 @@ const Skills = () => {
           <span className="text-blue-600">Skills</span>
         </h1>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 py-20">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 px-6 py-5 lg:py-20">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className=" text-2xl  flex flex-col items-center p-4 bg-gray-100 rounded-2xl border-4 border-amber-500   hover:scale-105 transition"
+            className=" text-2xl  flex flex-col items-center p-1 lg:p-4 bg-gray-100 rounded-2xl border-4 border-amber-500   hover:scale-105 transition"
           >
             <div className="text-5xl mb-3">{skill.icon}</div>
-            <p className="font-semibold text-gray-700 dark:text-gray-300">
+            <p className="font-semibold  text-gray-700 dark:text-gray-300">
               {skill.name}
             </p>
           </div>
