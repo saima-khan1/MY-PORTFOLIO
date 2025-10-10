@@ -54,10 +54,11 @@ const Projects = () => {
   if (loading) return <p>Loading projects...</p>;
   if (projects.length === 0) return <p>No projects Found</p>;
   return (
-    <div className=" px-6  lg:px-100 md:px-20 lg:py-30">
+    <div className=" px-10   lg:px-100 md:px-20 lg:py-1">
       <div className="text-center mt-30  lg:mb-12">
-        <h1 className="text-5xl font-bold">
-          <span className="text-blue-600">Projects</span>
+        <h1 className="text-5xl lg:text-7xl md:text-4xl font-bold">
+          <span>Featured</span>
+          <span className="text-blue-600 ml-4">Projects</span>
         </h1>
       </div>
 
@@ -66,7 +67,7 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project._id}
-            className="bg-white dark:bg-gray-900 rounded-2xl border-4 border-amber-500 hover:shadow-blue-900 sm:hover:shadow-amber-900 shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 dark:border-gray-700 lg:p-2"
+            className="bg-white dark:bg-gray-900 rounded-2xl border-4 border-amber-500 hover:shadow-blue-900 sm:hover:shadow-amber-900 shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 dark:border-gray-700  lg:p-2"
           >
             {" "}
             <img src={project.image} className="w-full h-48 " />
