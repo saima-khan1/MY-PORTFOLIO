@@ -93,6 +93,8 @@ const Projects = () => {
                 {project.demoLink && (
                   <a
                     href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-blue-600 text-white px-3 py-1.5 rounded-lg hover:bg-blue-700 text-sm"
                   >
                     <FiExternalLink /> Demo
@@ -101,6 +103,8 @@ const Projects = () => {
 
                 <a
                   href={project.gitHubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-amber-600 text-white px-3 py-1.5 rounded-lg hover:bg-gray-700 text-sm"
                 >
                   <FiGithub /> GitHub
