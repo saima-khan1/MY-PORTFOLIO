@@ -1,5 +1,6 @@
 import myphoto from "./../assets/myphoto.png";
 import { FaDownload } from "react-icons/fa";
+import myResume from "./../assets/_SaimaKhan-Resume-Junior FullStack Developer.pdf";
 
 const Home = () => {
   return (
@@ -82,11 +83,20 @@ const Home = () => {
             Sweden
           </p>
         </div>
-
-        <button className="mt-4 px-10 py-4 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700 transition duration-300 flex items-center gap-2">
+        {/* <a href={myResume} download="SaimaKhan-Resume.pdf">
+          <button className="mt-4 px-10 py-4 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700 transition duration-300 flex items-center gap-2">
+            <FaDownload className="text-xl" />
+            Download CV
+          </button>
+        </a> */}
+        <a
+          href={myResume}
+          download="SaimaKhan-Resume.pdf"
+          className="mt-4 px-10 py-4 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700 transition duration-300 flex items-center gap-2"
+        >
           <FaDownload className="text-xl" />
           Download CV
-        </button>
+        </a>
       </div>
     </div>
   );
