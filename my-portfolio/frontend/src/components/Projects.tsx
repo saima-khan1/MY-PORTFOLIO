@@ -54,7 +54,7 @@ const Projects = () => {
   if (loading) return <p>Loading projects...</p>;
   if (projects.length === 0) return <p>No projects Found</p>;
   return (
-    <div className=" px-10   lg:px-100 md:px-20 lg:py-1">
+    <div className=" px-5  lg:px-5 md:px-5 lg:py-1">
       <div className="text-center mt-30  lg:mb-12">
         <h1 className="text-5xl lg:text-7xl md:text-4xl font-bold">
           <span>Featured</span>
