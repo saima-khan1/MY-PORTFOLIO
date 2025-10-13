@@ -75,10 +75,7 @@ const Projects = () => {
               <h3 className="text-xl font-bold text-gray-600 dark:text-gray-100 mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-3">
-                {project.description}
-              </p>
-              {/* <div className="flex flex-wrap gap-2 mb-3 ">
+              <div className="flex flex-wrap gap-2 mb-3 ">
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
@@ -87,7 +84,10 @@ const Projects = () => {
                     {tech}
                   </span>
                 ))}
-              </div> */}
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 mb-3">
+                {project.description}
+              </p>
 
               <div className="flex gap-3">
                 {project.demoLink && (
