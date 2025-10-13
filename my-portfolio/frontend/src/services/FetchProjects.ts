@@ -9,7 +9,6 @@ export const getProjectData = async (): Promise<Project[]> => {
       throw new Error("not found");
     }
     const json = await response.json();
-    console.log(json, "data");
     return json.data as Project[];
   } catch (err) {
     console.error("failed to fetch data ", err);

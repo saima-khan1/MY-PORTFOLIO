@@ -39,7 +39,6 @@ const Projects = () => {
   const fetchData = async () => {
     try {
       const projectData = await getProjectData();
-      console.log(projectData, "data");
       setProjects(projectData);
     } catch (err) {
       console.error("failed to fetch", err);
