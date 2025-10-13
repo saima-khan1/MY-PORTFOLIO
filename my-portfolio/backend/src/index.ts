@@ -17,10 +17,13 @@ app.get("/", (req, res) => {
   res.send("hello world");
 });
 
+let isConnected = false;
 const connectDB = async () => {
+  if (isConnected) return;
   try {
     mongoose.set("strictQuery", true);
     await mongoose.connect(process.env.MONGODB_URL as string);
+    isConnected = true;
     console.log("connected to mongoDB");
   } catch (err) {
     console.error("❌ Failed to connect MongoDB:", err);
