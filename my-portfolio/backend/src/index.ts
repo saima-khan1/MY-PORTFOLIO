@@ -26,7 +26,8 @@ const connectDB = async () => {
     console.error("❌ Failed to connect MongoDB:", err);
   }
 };
-app.listen(Port, async () => {
-  console.log(`✅ Server running on http://localhost:${Port}`);
-  await connectDB();
-});
+// app.listen(Port, async () => {
+//   console.log(`✅ Server running on http://localhost:${Port}`);
+//   await connectDB();
+// });
+connectDB();
