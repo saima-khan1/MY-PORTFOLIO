@@ -56,7 +56,7 @@ const ContactInformation = () => {
         </h3>
         <div className="flex flex-wrap justify-center sm:justify-start gap-6 text-3xl sm:text-4xl">
           <a
-            href="https://github.com/yourgithub"
+            href="https://github.com/saima-khan1"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-500 transition"
@@ -65,7 +65,7 @@ const ContactInformation = () => {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourlinkedin"
+            href="https://www.linkedin.com/in/saimasanjeedakhan/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 transition"
