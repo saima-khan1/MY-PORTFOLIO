@@ -22,7 +22,7 @@ const connectDB = async () => {
   if (isConnected) return;
   try {
     mongoose.set("strictQuery", true);
-    await mongoose.connect(process.env.MONGODB_URL as string);
+    await mongoose.connect(process.env.MONGODB_URI as string);
     isConnected = true;
     console.log("connected to mongoDB");
   } catch (err) {
