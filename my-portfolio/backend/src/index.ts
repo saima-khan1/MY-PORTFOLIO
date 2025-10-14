@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/projects", projectRoutes);
 
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.send("Hello from backend 🚀");
 });
 
 let isConnected = false;
@@ -34,3 +34,4 @@ const connectDB = async () => {
 //   await connectDB();
 // });
 connectDB();
+export default app;
