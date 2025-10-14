@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon --watch src --ext ts --exec \"ts-node\" src/index.ts",
     "start": "node dist/index.js",
-    "build": "tsc"
+    "build": "tsc",
+    "vercel-start":"node dist/index.js"
   },
   "keywords": [],
   "author": "",
