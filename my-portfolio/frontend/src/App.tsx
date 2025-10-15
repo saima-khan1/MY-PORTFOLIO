@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Contact from "./components/ContactForm.tsx/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -50,7 +51,7 @@ const App = () => {
 
         <section
           id="projects"
-          className="py-15 sm:py-12 lg:py-0 flex justify-center"
+          className="py-14 sm:py-12 lg:py-0  flex justify-center"
         >
           <Projects />
         </section>
@@ -62,6 +63,7 @@ const App = () => {
           <Contact />
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
