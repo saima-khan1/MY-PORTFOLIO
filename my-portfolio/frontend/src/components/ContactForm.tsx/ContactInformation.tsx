@@ -11,14 +11,14 @@ import { FaLocationDot } from "react-icons/fa6";
 const ContactInformation = () => {
   return (
     <div className="px-4 sm:px-6  lg:px-6 py-8 lg:py-12">
-      <div className="mb-8">
-        <h3 className="font-bold text-2xl sm:text-3xl text-gray-800 text-center lg:text-4xl sm:text-left">
+      <div className="mb-8 text-center lg:text-left">
+        <h3 className="font-bold text-2xl sm:text-3xl text-gray-800  lg:text-4xl">
           Contact Information
         </h3>
       </div>
 
-      <div className="space-y-6">
-        <div className="flex items-start sm:items-center space-x-4 text-gray-700">
+      {/* <div className="space-y-6  ">
+        <div className="flex items-center space-x-4 text-gray-700">
           <FaEnvelope className="text-blue-500 text-3xl sm:text-4xl" />
           <p className="text-base lg:text-2xl sm:text-lg">
             <span className="font-semibold">Email:</span> <br />
@@ -31,7 +31,7 @@ const ContactInformation = () => {
           </p>
         </div>
 
-        <div className="flex items-start sm:items-center space-x-4 text-gray-700">
+        <div className="flex items-center  space-x-4 text-gray-700">
           <FaPhoneAlt className="text-amber-500 text-3xl sm:text-4xl" />
           <p className="text-base lg:text-2xl sm:text-lg">
             <span className="font-semibold">Phone:</span> <br />
@@ -41,20 +41,52 @@ const ContactInformation = () => {
           </p>
         </div>
 
-        <div className="flex items-start sm:items-center space-x-4 text-gray-700">
+        <div className="flex items-center  space-x-4 text-gray-700">
           <FaLocationDot className="text-blue-500 text-3xl sm:text-4xl" />
           <p className="text-base  lg:text-2xl sm:text-lg">
             <span className="font-semibold">Location:</span> <br />
             Helsingborg, Sweden
           </p>
         </div>
+      </div> */}
+      <div className=" space-y-2  lg:space-y-6  text-center  lg:text-left">
+        <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row items-center  justify-center md:justify-center lg:justify-start space-x-0 sm:space-x-4 text-gray-700">
+          <FaEnvelope className="text-blue-500 text-3xl sm:text-4xl mb-2 sm:mb-0" />
+          <p className="text-base sm:text-lg lg:text-2xl">
+            <span className="font-semibold">Email:</span> <br />
+            <a
+              href="mailto:saimakhan.6979@gmail.com"
+              className="hover:text-blue-600 break-all"
+            >
+              saimakhan.6979@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <div className="flex flex-col  sm:flex-row items-center  md:flex-col lg:flex-row   justify-center lg:justify-start space-x-0 sm:space-x-4 text-gray-700">
+          <FaPhoneAlt className="text-amber-500 text-3xl sm:text-4xl mb-2 sm:mb-0" />
+          <p className="text-base sm:text-lg lg:text-2xl">
+            <span className="font-semibold">Phone:</span> <br />
+            <a href="tel:+123456" className="hover:text-blue-600">
+              +123456
+            </a>
+          </p>
+        </div>
+
+        <div className="flex flex-col  sm:flex-row   items-center justify-center md:flex-col lg:flex-row  lg:justify-start  space-x-0 sm:space-x-4  text-gray-700">
+          <FaLocationDot className="text-blue-500 text-3xl sm:text-4xl mb-2 sm:mb-0" />
+          <p className="text-base sm:text-lg lg:text-2xl">
+            <span className="font-semibold">Location:</span> <br />
+            Helsingborg, Sweden
+          </p>
+        </div>
       </div>
 
-      <div className="mt-12 text-center sm:text-left">
+      <div className="mt-12 text-center   lg:px-0 md:px-8  sm:text-left">
         <h3 className="font-bold text-2xl  lg:text-4xl sm:text-3xl text-gray-800 mb-6">
           Connect with me
         </h3>
-        <div className="flex flex-wrap justify-center sm:justify-start gap-6 text-3xl sm:text-4xl">
+        <div className="flex flex-wrap lg:justify-start md:justify-center justify-center  sm:justify-start gap-6 text-3xl sm:text-4xl">
           <a
             href="https://github.com/saima-khan1"
             target="_blank"

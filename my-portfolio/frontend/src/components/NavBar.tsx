@@ -17,7 +17,7 @@ const NavBar = () => {
       <div className="flex justify-between items-center">
         <p className="text-4xl font-semibold ">
           <span className="text-white text-glow text-foreground">Saima</span>
-          <span className="text-blue-500 ml-2">Portfolio</span>
+          <span className="text-blue-500 ml-2">Khan</span>
         </p>
 
         <ul className="hidden md:flex flex-row space-x-6 text-2xl font-medium text-amber-50">

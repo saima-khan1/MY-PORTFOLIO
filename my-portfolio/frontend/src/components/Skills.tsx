@@ -50,7 +50,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className=" md:px-20 py-30">
+    <div className="  py-10 md:px-20 lg:py-30">
       <div className="text-center  lg:mb-12">
         <h1 className="text-5xl lg:text-7xl font-bold">
           <span className="text-blue-600">Skills</span>
